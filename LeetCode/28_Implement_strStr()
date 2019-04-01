@@ -1,0 +1,18 @@
+***
+Implement strStr().
+
+Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack.
+
+***
+
+***
+My idea:
+#1 point i to string
+#2 point j to needle
+for i from beginning till the end
+if s[i] = n [0], j += 1, till end of j or <>
+i += 1
+
+***
+
+return haystack.find(needle)
