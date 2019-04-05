@@ -1,0 +1,24 @@
+***
+Given a string s consists of upper/lower-case alphabets and empty space characters ' ', return the length of last word in the string.
+
+If the last word does not exist, return 0.
+
+Note: A word is defined as a character sequence consists of non-space characters only.
+
+Example:
+
+Input: "Hello World"
+Output: 5
+***
+
+class Solution:
+    def lengthOfLastWord(self, s: str) -> int:
+    	return 0 if not s.split() else len(s.split()[-1])
+
+***
+Syntax :
+str.split(separator, maxsplit)
+Parameters :
+separator : The is a delimiter. The string splits at this specified separator. If is not provided then any white space is a separator.
+maxsplit : It is a number, which tells us to split the string into maximum of provided number of times. If it is not provided then there is no limit.
+***
